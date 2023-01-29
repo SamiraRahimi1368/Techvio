@@ -1,5 +1,5 @@
 import './globals.css'
-
+import Header from '@/components/shared/Header'
 
 const Layout = ({ children }) => {
     return <html lang="en">
@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
             <title>Techvio</title>
         </head>
         <body>
-            {/* <Header /> */}
+            <Header />
             {children}
         </body>
     </html>
