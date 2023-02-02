@@ -46,7 +46,7 @@ const Header = () => {
         </button>
         <div className="hidden lg:block">
             <button
-                className="bg-purple-500 brightness-80 text-white hover:bg-blue-700 hover:text-white w-40 h-12 mr-40 mt:1 rounded  font-bold transition-colors duration-150  rounded-lg focus:shadow-outline lg:mt-8 z-0 "
+                className="bg-purple-500 brightness-80 text-white hover:bg-blue-700 hover:text-white w-48 h-12 mr-32 ml-10 mt:1 rounded  font-bold transition-colors duration-150  rounded-lg focus:shadow-outline lg:mt-8 z-0 lg:w-36 "
             >
                 Get It Support</button>
         </div>

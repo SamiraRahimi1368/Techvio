@@ -1,4 +1,6 @@
 import Hero from "../components/index/Hero"
+import ItSolutions from "@/components/index/ItSolutions"
+
 // import Solutions from "../components/index/Solutions"
 // import AboutUs from "../components/index/AboutUs"
 // import Statics from "../components/index/Statics"
@@ -38,19 +40,18 @@ const Home = async () => {
     let response3 = await fetch(url)
     let customers = (await response3.json()).result
 
-    query = encodeURIComponent('*[_type == "post"]')
+    query = encodeURIComponent('*[_type == "solution"]')
     url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
     let response5 = await fetch(url)
     let solutions = (await response5.json()).result
 
-    const end = new Date()
-    console.log(end - start)
+   
 
     return (
         <div>
             <Hero />
-            {/* <Solutions solutions={solutions} />
-            <ChooseUs />
+            <ItSolutions solutions={solutions}/>
+            {/* <ChooseUs />
             <TrustUs />
             <Statics />
             <Collaboration />
@@ -59,8 +60,7 @@ const Home = async () => {
             <Blogs blogs={blogs} />
             <Colleuges />
             <Customers customers={customers} />
-            <AboutUs />  */}
-
+            <AboutUs /> */}
         </div>
     )
 }
