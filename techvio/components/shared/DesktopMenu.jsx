@@ -1,3 +1,5 @@
+const ItemStyle = 'flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent lg:ml-6'
+
 const DesktopMenu = () => {
     return (
         <nav className="hidden lg:block">
@@ -6,7 +8,7 @@ const DesktopMenu = () => {
                     <ul className="flex flex-col border border-gray-100 rounded-lg text-white md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:mt-8 lg:gap-2 lg:pt-6">
 
                         <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent lg:ml-6">Home
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className={ItemStyle}>Home
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
@@ -22,10 +24,10 @@ const DesktopMenu = () => {
                                     ></path>
                                 </svg></button></li>
                         <li>
-                            <a href="#" className="block text-white  rounded md:bg-transparent hover:text-blue-700 md:p-0 md:dark:text-white  md:dark:bg-transparent" aria-current="page">About Us</a>
+                            <a href="#" className={ItemStyle} aria-current="page">About Us</a>
                         </li>
                         <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Services
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className={ItemStyle}>Services
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
@@ -41,7 +43,7 @@ const DesktopMenu = () => {
                                     ></path>
                                 </svg></button></li>
                         <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Pages
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className={ItemStyle}>Pages
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
@@ -57,7 +59,7 @@ const DesktopMenu = () => {
                                     ></path>
                                 </svg></button></li>
                         <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Blogs
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className={ItemStyle}>Blogs
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
@@ -73,7 +75,7 @@ const DesktopMenu = () => {
                                     ></path>
                                 </svg></button></li>
                         <li>
-                            <a href="#" className="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent hover:text-blue-700 md:p-0 md:dark:text-white  md:dark:bg-transparent" aria-current="page">Contact</a>
+                            <a href="#" className={ItemStyle}aria-current="page">Contact</a>
                         </li>
                     </ul>
                 </div>
