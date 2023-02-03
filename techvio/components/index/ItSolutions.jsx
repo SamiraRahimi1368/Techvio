@@ -1,4 +1,4 @@
-const main = 'border-zinc-500  grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 mx-4 sm:mx-16 md:mx-8 mt-10 lg:mx-10 xl:mx-20'
+const main = 'border-zinc-500 grid md:grid-cols-2 2xl:grid-cols-3  lg:grid-cols-3 gap-3 md:gap-8 md:mr-16 sm:grid-cols-1 mx-4 sm:mx-24 sm:pr-6   mt-10 lg:mx-10  xl:p-10 2xl:ml-10  xs:grid-cols-1 xs:p-6'
 const card = 'service shadow-lg shadow-slate-300 p-8 rounded-md group hover:-translate-y-2 transition-all duration-500'
 const svg = '[&>*]:text-icon w-[55px] aspect-square group-hover:-scale-x-100 transition-all duration-500'
 const title = 'mt-8 font-dosis font-bold mb-6 text-xl text-navy-700 text-left'
@@ -12,13 +12,13 @@ const a = "text-icon underline mt-6 block text-orange-600 font-dosis font-bold t
 
 const ItSolutions = async ({ solutions }) => {
     return (
-        <div className="text-center	mt-24 text-slate-800">
+        <div className="text-center	mt-24 text-slate-800 ">
             <h1 className="font-bold text-md text-orange-600 ">WHAT WE PROVIDE
             </h1>
             <h1 className="font-bold text-navy-900	text-4xl pt-5">IT Solutions
             </h1>
-            {solutions.map(solution => <div className={main}>
-                <div className={card}>
+            <div className={main}>
+            {solutions.map(solution =>  <div className={card}>
                     <div className={svg}>
                       <svg class="h-12 w-12 text-orange-500"
                             viewBox="0 0 24 24"
@@ -43,10 +43,10 @@ const ItSolutions = async ({ solutions }) => {
                         Read More
                     </a>
                     
-                </div>
-
-            </div>)
-            }
+                </div>)
+}
+            </div>
+            
         </div>
         
     )
