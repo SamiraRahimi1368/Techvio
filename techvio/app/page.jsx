@@ -1,5 +1,7 @@
+import React from 'react'
 import Hero from "../components/index/Hero"
 import ItSolutions from "@/components/index/ItSolutions"
+import Skills from "@/components/index/Skills"
 
 // import Solutions from "../components/index/Solutions"
 // import AboutUs from "../components/index/AboutUs"
@@ -12,7 +14,6 @@ import ItSolutions from "@/components/index/ItSolutions"
 // import Collaboration from "../components/index/Collaboration"
 // import Customers from "../components/index/Customers"
 // import Colleuges from "../components/index/Colleuges"
-import React from 'react'
 
 const Home = async () => {
 
@@ -45,12 +46,13 @@ const Home = async () => {
     let response5 = await fetch(url)
     let solutions = (await response5.json()).result
 
-   
+
 
     return (
         <div>
             <Hero />
-            <ItSolutions solutions={solutions}/>
+            <ItSolutions solutions={solutions} />
+            <Skills />
             {/* <ChooseUs />
             <TrustUs />
             <Statics />

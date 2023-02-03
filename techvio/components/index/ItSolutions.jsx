@@ -18,9 +18,9 @@ const ItSolutions = async ({ solutions }) => {
             <h1 className="font-bold text-navy-900	text-4xl pt-5">IT Solutions
             </h1>
             <div className={main}>
-            {solutions.map(solution =>  <div className={card}>
+                {solutions.map(solution => <div className={card}>
                     <div className={svg}>
-                      <svg className="h-12 w-12 text-orange-500"
+                        <svg className="h-12 w-12 text-orange-500"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -42,13 +42,13 @@ const ItSolutions = async ({ solutions }) => {
                     <a href="/" className={a}>
                         Read More
                     </a>
-                    
+
                 </div>)
-}
+                }
             </div>
-            
+
         </div>
-        
+
     )
 }
 
