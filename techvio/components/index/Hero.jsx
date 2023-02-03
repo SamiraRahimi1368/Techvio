@@ -20,6 +20,7 @@ const Hero = () => {
             </div>
             <div className="lg:mr-10 sm:mr-24 aspect-square mt-16 sm:w-4/5 sm:mx-auto md:w-2/3 lg:w-full xl:w-4/5 relative grid lg:grid-cols-6 md:grid-cols-12 gap-4 ">
                 <Image
+                    priority
                     fill
                     src='/images/home-font.png'
                     className="w-full h-full object-cover"
