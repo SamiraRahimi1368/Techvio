@@ -28,6 +28,9 @@ const Skills = () => {
                         <div className="relative w-full h-1.5 mt-2 overflow-hidden bg-slate-200">
                             <div in="translate-x-0" out="-translate-x-full" className="absolute left-0 h-1.5 bg-cta-reverse blur-[0.5px] transition-all duration-1000 translate-x-0"></div>
                         </div>
+                        <a href="/" className="inline-block text-center min-w-[9rem] py-3 rounded-lg transition duration-300 hover:shadow-md overflow-hidden  bg-cta-reverse text-white bg-purple-600 hover:bg-cta-hover mt-10 ">
+                            Learn More
+                        </a>
                     </div>
                 </div>
             </div>
