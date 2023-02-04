@@ -2,6 +2,11 @@ import React from 'react'
 import Hero from "../components/index/Hero"
 import ItSolutions from "@/components/index/ItSolutions"
 import Skills from "@/components/index/Skills"
+// import Script from 'next/script'
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// import { useEffect } from 'react'
+// import { use } from 'react'
 
 // import Solutions from "../components/index/Solutions"
 // import AboutUs from "../components/index/AboutUs"
@@ -15,39 +20,24 @@ import Skills from "@/components/index/Skills"
 // import Customers from "../components/index/Customers"
 // import Colleuges from "../components/index/Colleuges"
 
-const Home = async () => {
-
+const getData = async (type) => {
     const projectId = 'q8l0xi0c'
     const dataset = 'production'
 
-    let query = encodeURIComponent('*[_type == "testimonial"]')
-    let url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
-    const start = new Date()
-    let response = await fetch(url)
-    let testimonials = (await response.json()).result
+    const query = encodeURIComponent(`*[_type == "${type}"]`)
+    const url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
+    const response = await fetch(url)
+    const data = (await response.json()).result
+    return data
+}
 
-    query = encodeURIComponent('*[_type == "member"]')
-    url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
-    let response1 = await fetch(url)
-    let members = (await response1.json()).result
+const Home = async () => {
 
-    query = encodeURIComponent('*[_type == "blog"]')
-    url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
-    let response2 = await fetch(url)
-    let blogs = (await response2.json()).result
-
-    query = encodeURIComponent('*[_type == "customer"]')
-    url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
-    let response3 = await fetch(url)
-    let customers = (await response3.json()).result
-
-    query = encodeURIComponent('*[_type == "solution"]')
-    url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
-    let response5 = await fetch(url)
-    let solutions = (await response5.json()).result
-
-
-
+    const members = await getData('member')
+    const blogs = await getData('blog')
+    const customers = await getData('customer')
+    const solutions = await getData('solution')
+    
     return (
         <div>
             <Hero />
@@ -63,6 +53,7 @@ const Home = async () => {
             <Colleuges />
             <Customers customers={customers} />
             <AboutUs /> */}
+
         </div>
     )
 }

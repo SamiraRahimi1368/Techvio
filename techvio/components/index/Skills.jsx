@@ -1,7 +1,8 @@
 import Image from "next/image"
 const Skills = () => {
     return (
-        <div className="max-w-screen-xl mt-28 pt-36 px-4 pb-28 sm:px-16 md:px-8 lg:grid lg:grid-cols-2 lg:gap-20 lg:mt-16 xl:px-20 xl:mx-auto">
+        <div className="max-w-screen-xl mt-28 pt-36 px-4 pb-28 sm:px-16 md:px-8 lg:grid lg:grid-cols-2 lg:gap-20 lg:mt-16 xl:px-20 xl:mx-auto" data-aos="fade-up">
+
             <div className="font-dosis text-purple-600   tracking-tight font-semibold sm:text-lg">
                 ABOUT OUR COMPANY
                 <h2 className="font-bold font-black mt-4 mb-3 lg:leading-[3.5rem] text-lg sm:text-4xl  xl:text-3xl  text-slate-800">Providing your business with a quality IT service is our passion.
