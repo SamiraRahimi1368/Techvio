@@ -1,7 +1,21 @@
+"use client"
+import React, { useEffect } from 'react';
 import Image from "next/image"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Skills = () => {
+    useEffect(() => {
+        AOS.init({
+            once: true,
+            duration: 1000,
+
+        });
+
+    }, []);
+
     return (
-        <div className="max-w-screen-xl mt-28 pt-36 px-4 pb-28 sm:px-16 md:px-8 lg:grid lg:grid-cols-2 lg:gap-20 lg:mt-16 xl:px-20 xl:mx-auto" data-aos="fade-up">
+        <div className="max-w-screen-xl mt-28 pt-36 px-4 pb-28 sm:px-16 md:px-8 lg:grid lg:grid-cols-2 lg:gap-20 lg:mt-16 xl:px-20 xl:mx-auto " data-aos="fade-up" >
 
             <div className="font-dosis text-purple-600   tracking-tight font-semibold sm:text-lg">
                 ABOUT OUR COMPANY
@@ -10,7 +24,9 @@ const Skills = () => {
                 <p className="leading-7 mt-6 text-[15px] font-catamaran lg:text-lg  text-slate-500">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, nostrud
                 </p>
-                <div className="scroll-once" done="true">
+                <div className="scroll-once" done="true" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" >
                     <div className="mt-6 font-dosis relative">
                         <div className=" font-semibold">
                             IT Consulting
@@ -50,7 +66,9 @@ const Skills = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
+
 
 export default Skills
+

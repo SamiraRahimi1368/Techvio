@@ -1,10 +1,10 @@
-import React from 'react'
 import Hero from "../components/index/Hero"
 import ItSolutions from "@/components/index/ItSolutions"
 import Skills from "@/components/index/Skills"
-// import Script from 'next/script'
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import Script from "next/script"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 // import { useEffect } from 'react'
 // import { use } from 'react'
 
@@ -20,6 +20,7 @@ import Skills from "@/components/index/Skills"
 // import Customers from "../components/index/Customers"
 // import Colleuges from "../components/index/Colleuges"
 
+
 const getData = async (type) => {
     const projectId = 'q8l0xi0c'
     const dataset = 'production'
@@ -32,13 +33,17 @@ const getData = async (type) => {
 }
 
 const Home = async () => {
+    // <Script>
+    //     AOS.init();
+    // </Script>
 
     const members = await getData('member')
     const blogs = await getData('blog')
     const customers = await getData('customer')
     const solutions = await getData('solution')
-    
+
     return (
+
         <div>
             <Hero />
             <ItSolutions solutions={solutions} />
@@ -54,7 +59,9 @@ const Home = async () => {
             <Customers customers={customers} />
             <AboutUs /> */}
 
+
         </div>
+
     )
 }
 export default Home
