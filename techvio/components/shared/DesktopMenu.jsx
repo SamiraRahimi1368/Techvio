@@ -5,13 +5,13 @@ const DesktopMenu = () => {
         <nav className="hidden lg:block">
             <div className="container flex flex-wrap items-center justify-between mx-auto ">
                 <div className=" w-full md:block md:w-auto " id="navbar-dropdown">
-                    <ul className="flex flex-col border border-gray-100 rounded-lg text-white md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:mt-8 lg:gap-2 lg:pt-6">
+                    <ul className="flex flex-col border border-gray-100 rounded-lg text-white md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:mt-8 lg:gap-2 lg:pt-6 2xl:text-2xl">
 
                         <li>
                             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className={ItemStyle}>Home
                                 <svg className="fill-white" xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m10 13.062-5-5L6.062 7 10 10.938 13.938 7 15 8.062Z" /></svg></button></li>
                         <li className="lg:w-24">
-                            <a href="#" className={ItemStyle} aria-current="page">About Us</a>
+                            <a href="#" className={ItemStyle} aria-current="page">AboutUs</a>
                         </li>
                         <li>
                             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className={ItemStyle}>Services

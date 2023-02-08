@@ -3,6 +3,9 @@ import React, { useEffect } from 'react';
 import Image from "next/image"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+const percentage = "absolute top-0 text-sm text-cta-reverse right-0 text-black text-lg text-purple-500"
+const bar = 'absolute left-0 h-1.5 bg-cta-reverse blur-[0.5px] transition-all duration-1000 translate-x-0'
+const title = 'text-cta-reverse font-semibold pt-6'
 
 const Skills = () => {
     useEffect(() => {
@@ -15,7 +18,7 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className="max-w-screen-xl mt-28 pt-36 px-4 pb-28 sm:px-16 md:px-8 lg:grid lg:grid-cols-2 lg:gap-20 lg:mt-16 xl:px-20 xl:mx-auto " data-aos="fade-up" >
+        <div className="max-w-screen-xl mt-28 xl:pt-36 px-4 pb-28 sm:px-16 md:px-8 lg:grid lg:grid-cols-2 lg:gap-20 lg:mt-16 xl:px-20 xl:mx-auto xs:pt-4 " data-aos="fade-up" >
 
             <div className="font-dosis text-purple-600   tracking-tight font-semibold sm:text-lg">
                 ABOUT OUR COMPANY
@@ -28,22 +31,41 @@ const Skills = () => {
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine" >
                     <div className="mt-6 font-dosis relative">
-                        <div className=" font-semibold">
+                        <div className=" font-semibold ">
                             IT Consulting
+
                         </div>
                         <div className="relative w-full h-1.5 mt-2 overflow-hidden bg-slate-200">
-                            <div in="translate-x-0" out="-translate-x-full" className="absolute left-0 h-1.5 bg-cta-reverse blur-[0.5px] transition-all duration-1000 translate-x-0"></div>
+
+                            <div in="translate-x-0" out="-translate-x-full" className={bar}>
+
+                            </div>
                         </div>
-                        <div className="text-cta-reverse font-semibold pt-6">
+                        <div className={percentage}>
+                            90 %
+                        </div>
+                        <div className={title}>
                             Virtual Workstation
                         </div>
                         <div className="relative w-full h-1.5 mt-2 overflow-hidden bg-slate-200">
-                            <div in="translate-x-0" out="-translate-x-full" className="absolute left-0 h-1.5 bg-cta-reverse blur-[0.5px] transition-all duration-1000 translate-x-0"></div>
+                            <div in="translate-x-0" out="-translate-x-full" className={bar}></div>
+                           
                         </div>
-                        <div className="text-cta-reverse font-semibold pt-6">
-                            Managed IT Service                        </div>
+                        <div className={percentage}>
+                                90 %
+                            </div>
+                            <div className={title}>
+                            IT Consulting
+
+                        </div>
                         <div className="relative w-full h-1.5 mt-2 overflow-hidden bg-slate-200">
-                            <div in="translate-x-0" out="-translate-x-full" className="absolute left-0 h-1.5 bg-cta-reverse blur-[0.5px] transition-all duration-1000 translate-x-0"></div>
+
+                            <div in="translate-x-0" out="-translate-x-full" className={bar}>
+
+                            </div>
+                        </div>
+                        <div className={percentage}>
+                            90 %
                         </div>
                         <a href="/" className="inline-block text-center min-w-[9rem] py-3 rounded-lg transition duration-300 hover:shadow-md overflow-hidden  bg-cta-reverse text-white bg-purple-600 hover:bg-cta-hover mt-10 ">
                             Learn More

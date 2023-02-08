@@ -1,6 +1,4 @@
 'use client'
-
-
 import DesktopMenu from "./DesktopMenu"
 import MobileMenu from "./MobileMenu"
 
@@ -17,8 +15,6 @@ const Header = () => {
         <div>
             <DesktopMenu />
             <MobileMenu />
-
-
         </div>
         <button className="cursor-pointer text-white z-10"
             onClick={() => {
