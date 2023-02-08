@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Image from "next/image"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 const percentage = "absolute top-0 text-sm text-cta-reverse right-0 text-black text-lg text-purple-500"
 const bar = 'absolute left-0 h-1.5 bg-cta-reverse blur-[0.5px] transition-all duration-1000 translate-x-0'
 const title = 'text-cta-reverse font-semibold pt-6'
@@ -18,9 +19,9 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className="max-w-screen-xl mt-28 xl:pt-36 px-4 pb-28 sm:px-16 md:px-8 lg:grid lg:grid-cols-2 lg:gap-20 lg:mt-16 xl:px-20 xl:mx-auto xs:pt-4 " data-aos="fade-up" >
+        <div className="max-w-screen-xl mt-28 xl:pt-36 px-4 pb-28 sm:px-16 md:px-8 lg:grid lg:grid-cols-2 lg:gap-20 lg:mt-16 xl:px-20 xl:mx-auto xs:pt-4 skills bg-slate-50 " data-aos="fade-up" >
 
-            <div className="font-dosis text-purple-600   tracking-tight font-semibold sm:text-lg">
+            <div className="font-dosis text-purple-600   tracking-tight font-semibold sm:text-lg md:m-12">
                 ABOUT OUR COMPANY
                 <h2 className="font-bold font-black mt-4 mb-3 lg:leading-[3.5rem] text-lg sm:text-4xl  xl:text-3xl  text-slate-800">Providing your business with a quality IT service is our passion.
                 </h2>
@@ -73,12 +74,13 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative">
-                <div className="w-full aspect-square mt-10">
+            <div className=" md:m-12">
+                <div className="w-full aspect-square mt-10 relative ">
                     <Image
                         src="/images/skill.webp"
                         fill
                         alt="our-skills"
+                        className='w-full h-full object-cover'
                     >
                     </Image>
                 </div>

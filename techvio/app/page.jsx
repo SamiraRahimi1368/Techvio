@@ -1,6 +1,7 @@
 import Hero from "../components/index/Hero"
 import ItSolutions from "@/components/index/ItSolutions"
 import Skills from "@/components/index/Skills"
+import ChooseUs from "@/components/index/ChooseUs"
 import Script from "next/script"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -48,8 +49,8 @@ const Home = async () => {
             <Hero />
             <ItSolutions solutions={solutions} />
             <Skills />
-            {/* <ChooseUs />
-            <TrustUs />
+           <ChooseUs />
+            {/* <TrustUs />
             <Statics />
             <Collaboration />
             <Testimonial testimonials={testimonials} />
@@ -57,9 +58,7 @@ const Home = async () => {
             <Blogs blogs={blogs} />
             <Colleuges />
             <Customers customers={customers} />
-            <AboutUs /> */}
-
-
+            <AboutUs />  */}
         </div>
 
     )
