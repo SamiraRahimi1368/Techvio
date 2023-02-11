@@ -84,7 +84,7 @@ const Skills = () => {
                     >
                     </Image>
                 </div>
-                <div className="bg-white border-b-4 border-b-blue-400 p-6 aspect-video absolute bottom-8 left-8 lg:-left-20 lg:bottom-16">
+                <div className="bg-white border-b-4 border-b-blue-400 p-6 aspect-video absolute bottom-8 left-8 lg:left-96 lg:bottom-16">
                     <div className="text-5xl font-bold text-red-400">27</div>
                     <div className="uppercase text-md font-semibold mt-4">years of experience</div>
                 </div>
