@@ -19,7 +19,7 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className="max-w-screen-xl mt-28 xl:pt-36 px-4 pb-28 sm:px-16 md:px-8 lg:grid lg:grid-cols-2 lg:gap-20 lg:mt-16 xl:px-20 xl:mx-auto xs:pt-4 skills bg-slate-50 " data-aos="fade-up" >
+        <div className="max-w-screen-xl lg:mx-auto mt-28 xl:pt-36 px-4 pb-28 sm:px-16 md:px-8 lg:grid lg:grid-cols-2 lg:gap-20 lg:mt-16 xl:px-20 xl:mx-auto xs:pt-4 skills bg-slate-50 " data-aos="fade-up" >
 
             <div className="font-dosis text-purple-600   tracking-tight font-semibold sm:text-lg md:m-12">
                 ABOUT OUR COMPANY
