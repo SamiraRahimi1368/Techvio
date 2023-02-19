@@ -4,7 +4,7 @@ import Image from "next/image"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const percentage = "absolute top-0 text-sm text-cta-reverse right-0 text-black text-lg text-purple-500"
+const percentage = "absolute -top-10 text-sm text-cta-reverse right-0 text-black text-lg text-purple-500"
 const bar = 'absolute left-0 h-1.5 bg-cta-reverse blur-[0.5px] transition-all duration-1000 translate-x-0'
 const title = 'text-cta-reverse font-semibold pt-6'
 
@@ -13,7 +13,6 @@ const Skills = () => {
         AOS.init({
             once: true,
             duration: 1000,
-
         });
 
     }, []);
@@ -36,38 +35,40 @@ const Skills = () => {
                             IT Consulting
 
                         </div>
-                        <div className="relative w-full h-1.5 mt-2 overflow-hidden bg-slate-200">
+                        <div className="relative w-full h-1.5 mt-2  bg-slate-200">
 
                             <div in="translate-x-0" out="-translate-x-full" className={bar}>
 
                             </div>
+                            <div className={percentage}>
+                                90 %
+                            </div>
                         </div>
-                        <div className={percentage}>
-                            90 %
-                        </div>
+
                         <div className={title}>
                             Virtual Workstation
                         </div>
-                        <div className="relative w-full h-1.5 mt-2 overflow-hidden bg-slate-200">
+                        <div className="relative w-full h-1.5 mt-2  bg-slate-200">
                             <div in="translate-x-0" out="-translate-x-full" className={bar}></div>
-                           
-                        </div>
-                        <div className={percentage}>
-                                90 %
+                            <div className={percentage}>
+                                85 %
                             </div>
-                            <div className={title}>
+                        </div>
+
+                        <div className={title}>
                             IT Consulting
 
                         </div>
-                        <div className="relative w-full h-1.5 mt-2 overflow-hidden bg-slate-200">
+                        <div className="relative w-full h-1.5 mt-2  bg-slate-200">
 
                             <div in="translate-x-0" out="-translate-x-full" className={bar}>
 
                             </div>
+                            <div className={percentage}>
+                                32 %
+                            </div>
                         </div>
-                        <div className={percentage}>
-                            90 %
-                        </div>
+
                         <a href="/" className="inline-block text-center min-w-[9rem] py-3 rounded-lg transition duration-300 hover:shadow-md overflow-hidden  bg-cta-reverse text-white bg-purple-600 hover:bg-cta-hover mt-10 ">
                             Learn More
                         </a>
