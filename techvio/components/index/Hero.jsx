@@ -22,7 +22,8 @@ const Hero = () => {
                 <Image
                     priority
                     fill
-                    src='/images/home-font.png'
+                    //src='/images/home-font.png'
+                    src='https://samirarahimi.blob.core.windows.net/personalimages/My_Pic.jpg'
                     className="w-full h-full object-cover"
 
                     alt="home-font"

@@ -44,7 +44,7 @@ const DesktopMenu = () => {
                     <ul className="flex flex-col border border-gray-100 rounded-lg text-white md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:mt-8 lg:gap-2 lg:pt-6 2xl:text-2xl">
                         {
                             menuItems.map(item =>
-                                <li className="group relative">
+                                <li className="group relative flex items-center relative h-20">
                                     <a
                                         href={item.url}
                                         id="dropdownNavbarLink"
@@ -55,7 +55,7 @@ const DesktopMenu = () => {
                                         {
                                             item.children?.length > 0 &&
                                             <svg
-                                                className="fill-white"
+                                                className="fill-white group-hover:fill-indigo-400"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 height="20"
                                                 width="20"
@@ -66,10 +66,10 @@ const DesktopMenu = () => {
                                     </a>
                                     {
                                         item.children?.length > 0 &&
-                                        <ul className="hidden group-hover:block absolute bg-white pt-4 text-black ml-4">
+                                        <ul className="invisible opacity-10 translate-y-8 group-hover:block group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-1000 absolute top-16 bg-white text-black ml-4 w-48 rounded-lg mt-4  ">
                                             {
                                                 item.children.map(child =>
-                                                    <li>
+                                                    <li className="py-3 pl-4 hover:bg-slate-400 border-b border-slate-800">
                                                         <a
                                                             href={child.url}
                                                         >
