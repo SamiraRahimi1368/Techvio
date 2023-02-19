@@ -74,8 +74,8 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            <div className=" md:m-12">
-                <div className="w-full aspect-square mt-10 relative ">
+            <div className=" md:m-12 relative">
+                <div className="w-full aspect-square mt-10  ">
                     <Image
                         src="/images/skill.webp"
                         fill
@@ -84,7 +84,7 @@ const Skills = () => {
                     >
                     </Image>
                 </div>
-                <div className="bg-white border-b-4 border-b-blue-400 p-6 aspect-video absolute bottom-8 left-8 lg:left-96 lg:bottom-16">
+                <div className="bg-white border-b-4 border-b-blue-400 p-6 aspect-video absolute bottom-8 -left-8  lg:bottom-16">
                     <div className="text-5xl font-bold text-red-400">27</div>
                     <div className="uppercase text-md font-semibold mt-4">years of experience</div>
                 </div>
