@@ -2,8 +2,6 @@ import Hero from "../components/index/Hero"
 import ItSolutions from "@/components/index/ItSolutions"
 import Skills from "@/components/index/Skills"
 import ChooseUs from "@/components/index/ChooseUs"
-import Script from "next/script"
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // import { useEffect } from 'react'
@@ -34,10 +32,7 @@ const getData = async (type) => {
 }
 
 const Home = async () => {
-    // <Script>
-    //     AOS.init();
-    // </Script>
-
+    
     const members = await getData('member')
     const blogs = await getData('blog')
     const customers = await getData('customer')

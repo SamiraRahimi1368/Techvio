@@ -1,4 +1,7 @@
-const ItemStyle = 'flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent lg:ml-6 '
+const ItemStyle = 'flex items-center justify-between w-full py-2 pl-3 pr-4 lg:text-base	xl:text-base 2xl:text-xl text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent lg:ml-6 '
+
+
+
 
 const menuItems = [
     {
@@ -66,10 +69,10 @@ const DesktopMenu = () => {
                                     </a>
                                     {
                                         item.children?.length > 0 &&
-                                        <ul className="invisible opacity-10 translate-y-8 group-hover:block group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-1000 absolute top-16 bg-white text-black ml-4 w-48 rounded-lg mt-4  ">
+                                        <ul className="invisible opacity-10 translate-y-8 group-hover:block group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-1000 absolute top-16 bg-white text-black ml-4 lg:w-52 xl:w-68 2xl:w-72 rounded-lg mt-4 	 ">
                                             {
                                                 item.children.map(child =>
-                                                    <li className="py-3 pl-4 hover:bg-slate-400 border-b border-slate-800">
+                                                    <li className="py-3 pl-4 hover:text-purple-600 border-b-2 border-gray-200 border-lg border-slate-800 	last:border-b-0">
                                                         <a
                                                             href={child.url}
                                                         >

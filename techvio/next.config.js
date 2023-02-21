@@ -11,7 +11,8 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'samirarahimi.blob.core.windows.net',
+        //hostname: 'samirarahimi.blob.core.windows.net',
+        hostname: 'cdn.sanity.io',
       },
     ],
   },
