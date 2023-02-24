@@ -18,7 +18,7 @@ const Header = () => {
         </svg>
 
     return <div className="h-16 bg-transparent flex justify-between items-center px-15 xl:pl-28 lg:pl-10 pt-6 lg:gap-x-2 ">
-        <div className="text-white font-bold text-4xl xl:mt-10 lg:ml-0 lg:mt-8 sm:ml-16 2xl:ml-24 md:ml-6">Techvio</div>
+        <div className="text-white font-bold text-4xl xl:mt-10 lg:ml-0 lg:mt-8 sm:ml-16 2xl:ml-24 md:ml-6 xs:hidden relative">Techvio</div>
         <div>
             <DesktopMenu />
             <MobileMenu open={open} name='samira'/>

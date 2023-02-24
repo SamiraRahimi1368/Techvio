@@ -1,5 +1,6 @@
 import Hero from "../components/index/Hero"
 import ItSolutions from "@/components/index/ItSolutions"
+
 import Skills from "@/components/index/Skills"
 import ChooseUs from "@/components/index/ChooseUs"
 import 'aos/dist/aos.css';
@@ -33,9 +34,9 @@ const getData = async (type) => {
 
 const Home = async () => {
     
-    const members = await getData('member')
-    const blogs = await getData('blog')
-    const customers = await getData('customer')
+    // const members = await getData('member')
+    // const blogs = await getData('blog')
+    // const customers = await getData('customer')
     const solutions = await getData('solution')
 
     return (
